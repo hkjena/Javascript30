@@ -1,0 +1,70 @@
+html {
+  font-size: 10px;
+  background: url(https://picsum.photos/id/131/1280/720) top center;
+  background-size: cover;
+}
+:root {
+  --color: rgb(110, 184, 0);
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background-color: transparent;
+  user-select: none;
+}
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.keys {
+  display: flex;
+  flex-wrap: wrap;
+  /* flex: 1; */
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+}
+
+.key {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border: 0.4rem solid var(--color);
+  border-radius: 0.5rem;
+  margin: 1.5rem;
+  font-size: 1.5rem;
+  padding: 1rem 0.5rem;
+  transition: all 0.07s ease;
+  width: 10rem;
+  height: 10rem;
+  text-align: center;
+  color: rgb(255, 102, 102);
+  background: rgba(6, 255, 222, 0.2);
+  text-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.4);
+  cursor: pointer;
+}
+
+.playing {
+  transform: scale(1.2);
+  border-color: red;
+  color: red;
+  box-shadow: 0 0 1rem red;
+  text-shadow: 0 0 0.5rem black;
+}
+
+kbd {
+  display: block;
+  font-size: 4rem;
+  font-weight: bold;
+}
+
+.sound {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1rem;
+  color: black;
+  font-weight: bold;
+}
